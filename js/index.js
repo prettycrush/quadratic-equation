@@ -23,10 +23,9 @@ function solveEq(numbA, numbB, discr) {
         }  else if (discr === 0) { 
         const xSing = (( - numbB + Math.sqrt(discr)) / (numbA * 2));
         return xSing;
-        }  else (discr < 0); {
+        }  else if (discr < 0) {
         return 'Equation has no solution';
         }
 }
 let solution = solveEq(numbA, numbB, discr);
-//unreachacle code if instead (document.write) use return
 alert(solution);
