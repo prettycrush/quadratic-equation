@@ -16,21 +16,17 @@ else {
     let solution = solveEq(numbA, numbB, discr);
     document.write(solution);
 }
-
 function solveEq(numbA, numbB, discr) {
         if (discr > 0) {
         const xFir = (( - numbB + Math.sqrt(discr)) / (numbA * 2));
         const xSec = (( - numbB - Math.sqrt(discr)) / (numbA * 2));
         return 'x1 = ' + xFir + ' x2 = ' + xSec;
-        }
-        else if (discr === 0) { 
+        }  else if (discr === 0) { 
         const xSing = (( - numbB + Math.sqrt(discr)) / (numbA * 2));
         return xSing;
-        }
-        else (discr < 0) ; {
+        }  else (discr < 0); {
         return 'Equation has no solution';
         }
 }
-
 let solution = solveEq(numbA, numbB, discr);
 alert(solution);
