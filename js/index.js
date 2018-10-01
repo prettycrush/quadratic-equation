@@ -11,12 +11,12 @@ let discr = calcDiscr(numbA, numbB, numbC);
 
 function solveEq(numbA, numbB, discr) {
         if (discr > 0) {
-        const xFir = (( - numbB + Math.scrt(discr)) / (numbA * 2));
-        const xSec = (( - numbB - Math.scrt(discr)) / (numbA * 2));
+        const xFir = (( - numbB + Math.sqrt(discr)) / (numbA * 2));
+        const xSec = (( - numbB - Math.sqrt(discr)) / (numbA * 2));
         return 'x1 = ' + xFir + ' x2 = ' + xSec;
         }
         else if (discr === 0) { 
-        const xSing = (( - numbB + Math.scrt(discr)) / (numbA * 2));
+        const xSing = (( - numbB + Math.sqrt(discr)) / (numbA * 2));
         return xSing;
         }
         else (discr < 0) ;
