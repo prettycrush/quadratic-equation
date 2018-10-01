@@ -5,25 +5,26 @@ const numbB = parseFloat(prompt('Enter number B'));
 const numbC = parseFloat(prompt('Enter number C'));
 
 function calcDiscr(numbA, numbB, numbC) {
-    return numbB * numbB - 4 * numbA * numbC;
+    return (numbB * numbB - 4 * numbA * numbC);
     }
-const discr = calcDiscr(numbA, numbB, numbC);
+let discr = calcDiscr(numbA, numbB, numbC);
 
 function solveEq(numbA, numbB, discr) {
         if (discr > 0) {
-        const xFir = (( - numbB + Math.scrt(discr)) / numbA * 2);
-        const xSec = (( - numbB - Math.scrt(discr)) / numbA * 2);
+        const xFir = (( - numbB + Math.scrt(discr)) / (numbA * 2));
+        const xSec = (( - numbB - Math.scrt(discr)) / (numbA * 2));
         return 'x1 = ' + xFir + ' x2 = ' + xSec;
         }
         else if (discr === 0) { 
-        const xSing = ((-numbB+ Math.sqrt(discr)) / numbA * 2);
+        const xSing = (( - numbB + Math.scrt(discr)) / (numbA * 2));
         return xSing;
         }
-        else (discr < 0)  
+        else (discr < 0) ;
         return 'Equation has no solution';
-}
+        
+    }
 
-const solution = solveEq(numbA, numbB, discr);
+let solution = solveEq(numbA, numbB, discr);
 alert(solution);
 
 
