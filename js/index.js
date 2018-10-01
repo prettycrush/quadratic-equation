@@ -11,11 +11,10 @@ let discr = calcDiscr(numbA, numbB, numbC);
 
 if (numbA === 0) {
     document.write('this is not quadratic equation, number A cant be 0');
-    }
-else {
+    } else {
     let solution = solveEq(numbA, numbB, discr);
     document.write(solution);
-}
+    }
 function solveEq(numbA, numbB, discr) {
         if (discr > 0) {
         const xFir = (( - numbB + Math.sqrt(discr)) / (numbA * 2));
@@ -29,4 +28,5 @@ function solveEq(numbA, numbB, discr) {
         }
 }
 let solution = solveEq(numbA, numbB, discr);
+//unreachacle code if instead (document.write) use return
 alert(solution);
