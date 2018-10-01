@@ -5,9 +5,17 @@ const numbB = parseFloat(prompt('Enter number B'));
 const numbC = parseFloat(prompt('Enter number C'));
 
 function calcDiscr(numbA, numbB, numbC) {
-    return (numbB * numbB - 4 * numbA * numbC);
-    }
+        return (numbB * numbB - 4 * numbA * numbC);
+}
 let discr = calcDiscr(numbA, numbB, numbC);
+
+if (numbA === 0) {
+    document.write('this is not quadratic equation, number A cant be 0');
+    }
+else {
+    let solution = solveEq(numbA, numbB, discr);
+    document.write(solution);
+}
 
 function solveEq(numbA, numbB, discr) {
         if (discr > 0) {
@@ -19,16 +27,10 @@ function solveEq(numbA, numbB, discr) {
         const xSing = (( - numbB + Math.sqrt(discr)) / (numbA * 2));
         return xSing;
         }
-        else (discr < 0) ;
+        else (discr < 0) ; {
         return 'Equation has no solution';
-        
-    }
+        }
+}
 
 let solution = solveEq(numbA, numbB, discr);
 alert(solution);
-
-
-
-
-
-    
